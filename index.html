@@ -1,94 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DoneComply | Section 8 Compliance, Done for You</title>
+  <title>DoneComply | Section 8 Compliance — Done for You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f7f8fc;
-      color: #333;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
     }
-    .header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 30px;
+
+    body {
+      background-color: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 2rem 1rem;
       text-align: center;
+      border-bottom: 1px solid #e5e7eb;
     }
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #111827;
     }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
+
+    header h2 {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      color: #4b5563;
       max-width: 600px;
-      margin: 0 auto 30px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .cta-button {
-      background-color: #27ae60;
+
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      text-decoration: none;
       color: white;
-      padding: 15px 25px;
-      border: none;
-      font-size: 1em;
-      cursor: pointer;
-      border-radius: 5px;
+      background-color: #2563eb;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background-color 0.2s ease-in-out;
     }
+
+    .cta a:hover {
+      background-color: #1e40af;
+    }
+
     .features {
+      margin: 3rem auto;
+      max-width: 800px;
+      padding: 1rem;
+    }
+
+    .features ul {
+      list-style: none;
+    }
+
+    .features li {
+      background-color: #ffffff;
+      margin: 1rem 0;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
-      flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
+      gap: 1rem;
+      font-size: 1.125rem;
     }
-    .features div {
-      max-width: 700px;
-      margin-bottom: 20px;
+
+    .features li::before {
+      content: '✅';
+      font-size: 1.25rem;
     }
-    .footer {
-      background-color: #2c3e50;
-      color: white;
+
+    footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
+      padding: 2rem 1rem;
+      font-size: 0.875rem;
+      color: #6b7280;
     }
   </style>
 </head>
+
 <body>
-  <div class="header">
-    <h2>DoneComply</h2>
-    <p>We take Section 8 compliance off your plate.</p>
-  </div>
-
-  <div class="hero">
-    <h1>Never Miss a Subsidy Again</h1>
-    <p>
-      DoneComply offloads your Section 8 paperwork, deadlines, and admin burden — so you can focus on your properties, not the process.
-    </p>
-    <button class="cta-button" onclick="window.location='mailto:hello@donecomply.com'">Get In Touch</button>
-  </div>
-
-  <div class="features">
-    <div>
-      <h3> Lease and Paperwork Review</h3>
-      <p>We check your leases and documentation for red flags that could block subsidy approval.</p>
+  <header>
+    <h1>Section 8 Compliance — Done for You</h1>
+    <h2>Stop chasing paperwork, deadlines, and housing authority reps. DoneComply takes over your Section 8 admin, so you can protect your subsidy income — without lifting a finger.</h2>
+    <div class="cta">
+      <a href="#">Get a Free Compliance Snapshot</a>
+      <span style="margin: 0 1rem;">or</span>
+      <a href="#">Book a 15-Min Call Now</a>
     </div>
-    <div>
-      <h3> Deadline Tracking</h3>
-      <p>We monitor key deadlines for inspections, lease approvals, renewals, and rent reasonableness.</p>
-    </div>
-    <div>
-      <h3> Centralized Reporting</h3>
-      <p>You get a clear weekly report — no more chasing paperwork or waiting on PHA responses blindly.</p>
-    </div>
-  </div>
+  </header>
 
-  <div class="footer">
-    &copy; 2025 DoneComply LLC — All rights reserved.
-  </div>
+  <section class="features">
+    <ul>
+      <li>Forms & Documentation? Done.</li>
+      <li>PHA Follow-ups? We handle it.</li>
+      <li>Deadlines? Tracked, submitted, confirmed.</li>
+      <li>Lost subsidy? Not on our watch.</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 DoneComply, LLC. All rights reserved.
+  </footer>
 </body>
+
 </html>
